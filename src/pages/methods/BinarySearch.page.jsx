@@ -4,8 +4,8 @@ import BinarySearchImplementation from "../../Components/BinarySearchImpl.compon
 
 const BinarySearchPage = () => {
   return (
-    <div>
-      <div>
+    <div className="container">
+      <div className="mt-4">
         <h2>
           {
             AlgorithmList.find(() => (obj) => obj.title === "Binary Search")
@@ -19,7 +19,10 @@ const BinarySearchPage = () => {
           }
         </p>
       </div>
-      <BinarySearchImplementation />
+
+      <div className="mt-4">
+        <BinarySearchImplementation />
+      </div>
     </div>
   );
 };

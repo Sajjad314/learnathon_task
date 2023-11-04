@@ -12,14 +12,21 @@ const HomePage = () => {
     }
   };
   return (
-    <div>
-      {methodList.map((method, index) => {
-        return (
-          <div key={index}>
-            <button onClick={() => handleButtonClick(method)}>{method}</button>
-          </div>
-        );
-      })}
+    <div className="container">
+      <h1 className="text-center my-4">List of Methods</h1>
+      <ul className="list-group">
+        {methodList.map((method, index) => {
+          return (
+            <li
+              key={index}
+              className="list-group-item list-group-item-action"
+              onClick={() => handleButtonClick(method)}
+            >
+              {method}
+            </li>
+          );
+        })}
+      </ul>
     </div>
   );
 };

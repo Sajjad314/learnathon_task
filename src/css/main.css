@@ -47,3 +47,8 @@ a:hover {
 }
 
 /* Add more styles as needed */
+.list-group-item-action:hover {
+  background-color: #007bff; /* Change the background color on hover */
+  color: #fff; /* Change the text color on hover */
+  border-color: #007bff; /* Change the border color on hover (if applicable) */
+}
